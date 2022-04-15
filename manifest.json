@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "SelSword",
-    "description": "An extension which lets you copy a whole post/comment from Twitter, Nitter or Facebook when you double click its content",
+    "description": "Copy a whole post/comment from Twitter, Nitter or Facebook by double clicking its content",
     "version": "1.0",
 
     "icons": {
@@ -9,7 +9,7 @@
     },
 
     "content_scripts": [{
-        "matches": ["*://*.facebook.com/*", "*://*.nitter.net/*", "*://*.twitter.com/*"],
+        "matches": ["file://*/*", "*://*.facebook.com/*", "*://*.nitter.net/*", "*://*.twitter.com/*"],
         "js": ["select-post.js"]
     }],
 

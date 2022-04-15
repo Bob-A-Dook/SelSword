@@ -19,6 +19,12 @@ function copyToClipboard(event) {
     var mainbody;
     var is_app_like = false;
 
+    if (!hostname) {
+        alert('[WARNING] No domain specified. You are probably using the '
+              + 'script on a file saved to disk. It cannot find any '
+              + 'comments like this');
+    }
+
     if (hostname.endsWith('nitter.net')) {
         mainbody = container.closest('.timeline-item');
     }
