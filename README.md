@@ -4,7 +4,7 @@ A browser extension for selecting a post/comment from Facebook, Twitter or Nitte
 
 Use case: when we want to archive posts from large social networks as HTML, without copying their content via the browser's developer tools every single time.
 
-I created it with the aim of making it easier to [mark fake accounts]() (blog post in Polish only), but thought that it might also be useful as a standalone extension.
+I created it with the aim of making it easier to [mark fake accounts](https://www.ciemnastrona.com.pl/2022/04/15/trolle-rosja-ukraina) (blog post **in Polish only**), but thought that it might also be useful as a standalone extension.
 
 ## Installation
 
