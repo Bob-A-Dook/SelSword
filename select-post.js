@@ -33,6 +33,9 @@ function copyToClipboard(event) {
     }
     else if (hostname == 'www.facebook.com') {
         mainbody = container.closest('[role="article"]');
+        if (mainbody == null ) {
+           mainbody = container.closest('[aria-posinset]')
+        }
     }
     else if (hostname.endsWith('twitter.com')) {
         mainbody = container.closest('article');
