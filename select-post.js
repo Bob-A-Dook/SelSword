@@ -87,7 +87,7 @@ function copyToClipboard(event) {
         document.execCommand("copy");
        
         // Then mark the copied content with a red border
-        mainbody.style.border = '2px solid red'
+        mainbody.style['box-shadow'] = '0 0 0 2px red';
     }   
 }
 
