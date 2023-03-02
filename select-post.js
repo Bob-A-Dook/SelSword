@@ -25,14 +25,14 @@ function copyToClipboard(event) {
               + 'comments like this');
     }
 
-    if (hostname.endsWith('nitter.net')) {
+    if (hostname.includes('nitter')) {
         mainbody = container.closest('.timeline-item');
     }
     else if (hostname == 'mbasic.facebook.com') {
         mainbody = container.closest('article, div[id], [role]');
     }
     else if (hostname == 'www.facebook.com') {
-        mainbody = container.closest('[role="article"]');
+        mainbody = container.closest('[role="article"],[role="dialog"]');
         if (mainbody == null ) {
            mainbody = container.closest('[aria-posinset]')
         }
